@@ -1,8 +1,6 @@
 import { createStore } from 'easy-peasy';
+import model, {StoreModel} from "./models";
 
-const store = createStore({
-    name: 'Chi Thien',
-    course: "Learn easy peasy",
-})
+const store = createStore<StoreModel>(model)
 
 export default store
